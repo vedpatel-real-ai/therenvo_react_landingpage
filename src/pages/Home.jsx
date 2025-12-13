@@ -374,13 +374,15 @@ const Home = () => {
           </div>
           <div className="pain-grid fade-in-section">
             {painPoints.map((point, index) => (
-              <div key={index} className="pain-item">
-                <div className={`pain-icon pain-icon--${point.variant}`}>
-                  {point.icon}
-                </div>
+            <div key={index} className="pain-item">
+              <div className={`pain-icon pain-icon--${point.variant}`}>
+                {point.icon}
+              </div>
+              <div className="pain-item-content">
                 <h3 className="pain-title">{point.title}</h3>
                 <p className="pain-description">{point.description}</p>
               </div>
+            </div>
             ))}
           </div>
         </div>
