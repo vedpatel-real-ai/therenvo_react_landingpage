@@ -1,0 +1,675 @@
+/* ============================================ */
+/* PRICING PAGE - PROFESSIONAL STYLING */
+/* ============================================ */
+
+/* Base Container */
+.pricing-page-container {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 min-h-screen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Section Divider */
+.pricing-section-divider {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(156, 163, 175, 0.3), transparent);
+}
+
+/* ============================================ */
+/* HEADER SECTION */
+/* ============================================ */
+.pricing-header {
+    @apply pt-20 pb-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950;
+}
+
+.pricing-header-inner {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+}
+
+.pricing-header-badge {
+    @apply inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider;
+    @apply bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400;
+}
+
+.pricing-header-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight;
+}
+
+.pricing-header-title-accent {
+    @apply block text-brand-600 dark:text-brand-500 mt-2;
+}
+
+.pricing-header-subtitle {
+    @apply text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed;
+}
+
+.pricing-header-subtitle strong {
+    @apply text-gray-900 dark:text-white font-semibold;
+}
+
+/* Stats Grid */
+.pricing-stats-grid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12;
+}
+
+.pricing-stat-card {
+    @apply bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800;
+    @apply transition-all duration-200;
+}
+
+.pricing-stat-card:hover {
+    @apply border-gray-300 dark:border-gray-700;
+}
+
+.pricing-stat-value {
+    @apply text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-1;
+}
+
+.pricing-stat-label {
+    @apply text-sm text-gray-500 dark:text-gray-500;
+}
+
+/* Billing Toggle */
+.pricing-toggle-container {
+    @apply flex flex-col items-center;
+}
+
+.pricing-toggle-wrapper {
+    @apply flex items-center gap-4 mb-2;
+}
+
+.pricing-toggle-label {
+    @apply text-sm font-medium text-gray-400 dark:text-gray-500 transition-colors duration-200;
+}
+
+.pricing-toggle-label.active {
+    @apply text-gray-900 dark:text-white;
+}
+
+.pricing-toggle-switch {
+    @apply relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full;
+    @apply border-2 border-transparent transition-colors duration-200 ease-in-out;
+    @apply bg-gray-300 dark:bg-gray-700;
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950;
+}
+
+.pricing-toggle-switch.active {
+    @apply bg-brand-600;
+}
+
+.pricing-toggle-knob {
+    @apply pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-sm;
+    @apply ring-0 transition duration-200 ease-in-out;
+}
+
+.pricing-toggle-badge {
+    @apply ml-2 inline-block bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400;
+    @apply text-xs font-semibold px-2 py-0.5 rounded-full;
+}
+
+.pricing-toggle-hint {
+    @apply text-xs text-gray-400 dark:text-gray-500;
+}
+
+/* ============================================ */
+/* PRICING PLANS SECTION */
+/* ============================================ */
+.pricing-plans-section {
+    @apply py-20 bg-white dark:bg-gray-950;
+}
+
+.pricing-plans-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pricing-plans-grid {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto;
+}
+
+/* Pricing Card Base */
+.pricing-card {
+    @apply bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800;
+    @apply flex flex-col transition-all duration-300;
+}
+
+.pricing-card:hover {
+    @apply border-gray-300 dark:border-gray-700;
+}
+
+.pricing-card-free {
+    @apply p-8;
+}
+
+.pricing-card-premium {
+    @apply p-8 relative;
+    @apply border-2 border-brand-500 dark:border-brand-600;
+    box-shadow: 0 0 0 1px rgba(var(--brand-500-rgb, 59, 130, 246), 0.1);
+}
+
+.pricing-card-popular-badge {
+    @apply absolute -top-4 left-1/2 transform -translate-x-1/2;
+    @apply bg-brand-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full;
+    @apply uppercase tracking-wide;
+}
+
+/* Card Header */
+.pricing-card-header {
+    @apply mb-8;
+}
+
+.pricing-card-header-top {
+    @apply flex items-center justify-between mb-4;
+}
+
+.pricing-card-title {
+    @apply text-xl font-bold text-gray-900 dark:text-white;
+}
+
+.pricing-card-badge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full;
+}
+
+.pricing-card-badge-gray {
+    @apply bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400;
+}
+
+.pricing-card-badge-brand {
+    @apply bg-brand-100 text-brand-700 dark:bg-brand-900/50 dark:text-brand-400;
+}
+
+.pricing-card-price {
+    @apply flex items-baseline mb-2;
+}
+
+.pricing-card-price-value {
+    @apply text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white tracking-tight;
+}
+
+.pricing-card-price-period {
+    @apply ml-2 text-base font-medium text-gray-500 dark:text-gray-500;
+}
+
+.pricing-card-savings {
+    @apply text-sm text-gray-500 dark:text-gray-500 mb-3;
+}
+
+.pricing-card-savings-amount {
+    @apply text-green-600 dark:text-green-500 font-medium ml-2;
+}
+
+.pricing-card-description {
+    @apply text-sm text-gray-600 dark:text-gray-400 leading-relaxed;
+}
+
+/* Card Features */
+.pricing-card-features {
+    @apply flex-1 mb-8;
+}
+
+.pricing-card-features-label {
+    @apply text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-4;
+}
+
+.pricing-card-features-list {
+    @apply space-y-4;
+}
+
+.pricing-card-feature-item {
+    @apply flex items-start;
+}
+
+.pricing-card-feature-icon {
+    @apply flex-shrink-0 h-5 w-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mt-0.5;
+}
+
+.pricing-card-feature-icon-brand {
+    @apply bg-brand-100 dark:bg-brand-900/30;
+}
+
+.pricing-card-feature-content {
+    @apply ml-3;
+}
+
+.pricing-card-feature-title {
+    @apply text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.pricing-card-feature-desc {
+    @apply text-xs text-gray-500 dark:text-gray-500 mt-0.5;
+}
+
+/* Card Value Prop */
+.pricing-card-value-prop {
+    @apply bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4 mb-6 border border-gray-100 dark:border-gray-800;
+}
+
+.pricing-card-value-prop-text {
+    @apply text-sm text-center;
+}
+
+.pricing-card-value-prop-highlight {
+    @apply font-semibold text-gray-900 dark:text-white block mb-1;
+}
+
+.pricing-card-value-prop-sub {
+    @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Card Footer */
+.pricing-card-footer {
+    @apply mt-auto;
+}
+
+.pricing-card-button {
+    @apply block w-full text-center rounded-xl py-3.5 font-semibold transition-all duration-200;
+}
+
+.pricing-card-button-secondary {
+    @apply bg-gray-900 dark:bg-gray-800 text-white hover:bg-gray-800 dark:hover:bg-gray-700;
+}
+
+.pricing-card-button-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+    @apply shadow-lg shadow-brand-600/25;
+}
+
+.pricing-card-footer-note {
+    @apply text-center text-xs text-gray-400 dark:text-gray-500 mt-3;
+}
+
+/* ============================================ */
+/* FEATURES SECTION */
+/* ============================================ */
+.pricing-features-section {
+    @apply py-24 bg-gray-50 dark:bg-gray-900;
+}
+
+.pricing-features-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Section Header */
+.pricing-section-header {
+    @apply text-center mb-16;
+}
+
+.pricing-section-badge {
+    @apply inline-block text-xs font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider;
+    @apply bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-gray-400;
+}
+
+.pricing-section-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.pricing-section-subtitle {
+    @apply text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto;
+}
+
+/* Feature Category */
+.pricing-feature-category {
+    @apply mb-20 last:mb-0;
+}
+
+.pricing-feature-category-header {
+    @apply flex flex-wrap items-center gap-4 mb-8 pb-6 border-b border-gray-200 dark:border-gray-800;
+}
+
+.pricing-feature-category-icon {
+    @apply flex-shrink-0 h-12 w-12 rounded-xl flex items-center justify-center;
+}
+
+.pricing-feature-category-icon-gray {
+    @apply bg-gray-900 dark:bg-gray-800;
+}
+
+.pricing-feature-category-icon-purple {
+    @apply bg-purple-600;
+}
+
+.pricing-feature-category-icon-brand {
+    @apply bg-gradient-to-br from-brand-500 to-brand-700;
+}
+
+.pricing-feature-category-icon-orange {
+    @apply bg-orange-500;
+}
+
+.pricing-feature-category-icon-green {
+    @apply bg-green-600;
+}
+
+.pricing-feature-category-info {
+    @apply flex-1 min-w-0;
+}
+
+.pricing-feature-category-title {
+    @apply text-xl font-bold text-gray-900 dark:text-white;
+}
+
+.pricing-feature-category-desc {
+    @apply text-sm text-gray-500 dark:text-gray-500;
+}
+
+.pricing-feature-category-badge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full;
+    @apply bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400;
+}
+
+/* Feature Grid */
+.pricing-feature-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+/* Feature Card */
+.pricing-feature-card {
+    @apply bg-white dark:bg-gray-950 rounded-xl p-5 border border-gray-200 dark:border-gray-800;
+    @apply transition-all duration-200;
+}
+
+.pricing-feature-card:hover {
+    @apply border-gray-300 dark:border-gray-700;
+}
+
+.pricing-feature-icon {
+    @apply h-10 w-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center;
+}
+
+/* ============================================ */
+/* COMPARISON TABLE SECTION */
+/* ============================================ */
+.pricing-comparison-section {
+    @apply py-24 bg-white dark:bg-gray-950;
+}
+
+.pricing-comparison-container {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pricing-comparison-table-wrapper {
+    @apply overflow-x-auto -mx-4 px-4;
+}
+
+.pricing-comparison-table {
+    @apply w-full min-w-[600px];
+}
+
+.pricing-comparison-table thead tr {
+    @apply border-b-2 border-gray-200 dark:border-gray-800;
+}
+
+.pricing-table-header-feature {
+    @apply text-left py-4 px-4 font-semibold text-gray-900 dark:text-white text-sm;
+}
+
+.pricing-table-header-plan {
+    @apply text-center py-4 px-4 font-semibold text-gray-900 dark:text-white text-sm w-28;
+}
+
+.pricing-table-header-premium {
+    @apply text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/10 rounded-t-lg;
+}
+
+.pricing-comparison-table tbody tr {
+    @apply border-b border-gray-100 dark:border-gray-800/50;
+}
+
+.pricing-comparison-table tbody tr:last-child {
+    @apply border-b-0;
+}
+
+.pricing-comparison-table tbody td {
+    @apply py-3.5 px-4 text-sm text-gray-700 dark:text-gray-300;
+}
+
+.pricing-table-category-row {
+    @apply bg-gray-50 dark:bg-gray-900;
+}
+
+.pricing-table-category-row td {
+    @apply font-semibold text-gray-900 dark:text-white text-xs uppercase tracking-wider !important;
+}
+
+.pricing-table-value {
+    @apply text-center;
+}
+
+.pricing-table-premium-cell {
+    @apply bg-brand-50/50 dark:bg-brand-900/10;
+}
+
+.pricing-table-check {
+    @apply h-5 w-5 text-green-500 mx-auto;
+}
+
+.pricing-table-cross {
+    @apply h-5 w-5 text-gray-300 dark:text-gray-700 mx-auto;
+}
+
+/* ============================================ */
+/* TRUST SECTION */
+/* ============================================ */
+.pricing-trust-section {
+    @apply py-20 bg-gray-50 dark:bg-gray-900;
+}
+
+.pricing-trust-container {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+}
+
+.pricing-trust-title {
+    @apply text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3;
+}
+
+.pricing-trust-subtitle {
+    @apply text-sm text-gray-600 dark:text-gray-400 mb-12;
+}
+
+.pricing-trust-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-8;
+}
+
+.pricing-trust-item {
+    @apply flex flex-col items-center;
+}
+
+.pricing-trust-icon {
+    @apply h-12 w-12 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-3;
+    @apply text-gray-600 dark:text-gray-400;
+}
+
+.pricing-trust-item-title {
+    @apply font-semibold text-gray-900 dark:text-white text-sm;
+}
+
+.pricing-trust-item-desc {
+    @apply text-xs text-gray-500 dark:text-gray-500;
+}
+
+/* ============================================ */
+/* FAQ SECTION */
+/* ============================================ */
+.pricing-faq-section {
+    @apply py-24 bg-white dark:bg-gray-950;
+}
+
+.pricing-faq-container {
+    @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pricing-faq-list {
+    @apply space-y-3;
+}
+
+.pricing-faq-item {
+    @apply bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800;
+    @apply overflow-hidden transition-all duration-200;
+}
+
+.pricing-faq-item:hover {
+    @apply border-gray-300 dark:border-gray-700;
+}
+
+.pricing-faq-question {
+    @apply w-full text-left px-6 py-5 flex items-center justify-between;
+    @apply text-sm font-semibold text-gray-900 dark:text-white;
+    @apply transition-colors duration-200;
+}
+
+.pricing-faq-question:hover {
+    @apply text-gray-700 dark:text-gray-200;
+}
+
+.pricing-faq-icon {
+    @apply h-5 w-5 text-gray-400 transition-transform duration-200 flex-shrink-0 ml-4;
+}
+
+.pricing-faq-answer {
+    @apply px-6 pb-0 overflow-hidden transition-all duration-300;
+    max-height: 0;
+    opacity: 0;
+}
+
+.pricing-faq-answer.open {
+    @apply pb-5;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.pricing-faq-answer p {
+    @apply text-sm text-gray-600 dark:text-gray-400 leading-relaxed;
+}
+
+/* ============================================ */
+/* CTA SECTION */
+/* ============================================ */
+.pricing-cta-section {
+    @apply py-24 bg-gray-900 dark:bg-gray-950;
+}
+
+.pricing-cta-container {
+    @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+}
+
+.pricing-cta-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4;
+}
+
+.pricing-cta-subtitle {
+    @apply text-base text-gray-400 mb-10 max-w-xl mx-auto;
+}
+
+.pricing-cta-buttons {
+    @apply flex flex-col sm:flex-row justify-center gap-4 mb-8;
+}
+
+.pricing-cta-button {
+    @apply px-8 py-4 rounded-xl font-semibold text-base transition-all duration-200;
+}
+
+.pricing-cta-button-primary {
+    @apply bg-white text-gray-900 hover:bg-gray-100;
+}
+
+.pricing-cta-button-secondary {
+    @apply bg-transparent text-white border border-gray-700 hover:border-gray-600 hover:bg-gray-800;
+}
+
+.pricing-cta-note {
+    @apply text-sm text-gray-500;
+}
+
+/* ============================================ */
+/* FOOTER */
+/* ============================================ */
+.pricing-footer {
+    @apply bg-gray-950 text-white py-12 border-t border-gray-900;
+}
+
+.pricing-footer-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pricing-footer-content {
+    @apply flex flex-col md:flex-row justify-between items-center mb-8;
+}
+
+.pricing-footer-brand {
+    @apply mb-6 md:mb-0 text-center md:text-left;
+}
+
+.pricing-footer-logo {
+    @apply text-xl font-bold text-white;
+}
+
+.pricing-footer-logo-accent {
+    @apply text-brand-500;
+}
+
+.pricing-footer-tagline {
+    @apply text-sm text-gray-500 mt-1;
+}
+
+.pricing-footer-nav {
+    @apply flex gap-8;
+}
+
+.pricing-footer-link {
+    @apply text-sm text-gray-400 hover:text-white transition-colors duration-200;
+}
+
+.pricing-footer-link-active {
+    @apply text-white;
+}
+
+.pricing-footer-bottom {
+    @apply pt-8 border-t border-gray-900 text-center;
+}
+
+.pricing-footer-bottom p {
+    @apply text-sm text-gray-500;
+}
+
+/* ============================================ */
+/* RESPONSIVE ADJUSTMENTS */
+/* ============================================ */
+@media (max-width: 640px) {
+    .pricing-header {
+        @apply pt-12 pb-12;
+    }
+
+    .pricing-header-title {
+        @apply text-2xl;
+    }
+
+    .pricing-plans-section,
+    .pricing-features-section,
+    .pricing-comparison-section,
+    .pricing-faq-section,
+    .pricing-cta-section {
+        @apply py-16;
+    }
+
+    .pricing-feature-category-header {
+        @apply flex-col items-start;
+    }
+
+    .pricing-feature-category-badge {
+        @apply mt-2;
+    }
+}
+
+/* ============================================ */
+/* UTILITY CLASSES */
+/* ============================================ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
