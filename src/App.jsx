@@ -4,11 +4,13 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home.jsx';
 import Pricing from './pages/Pricing.jsx';
 import Features from './pages/Features.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import './App.css';
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <main className="main-content">
         <Routes>
