@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './features.css';
+import './Features.css';
 
 const Features = () => {
   const [activeSection, setActiveSection] = useState('');
